@@ -1,0 +1,87 @@
+.main {
+    background: #e7e7e7;
+    font-family: $font_roboto;
+    height: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 32px;
+        font-weight: 500;
+    }
+ 
+    p{
+        width: 540px;
+        height: 67px;
+        line-height: 26px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+.project{
+    height: 250px;
+    background: $color;
+    padding: 0 409px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 50px;
+        height: 50px;
+        color: #EEEFF1;
+
+    }
+}
+.project_list{
+    display: flex;
+    gap: 20px;
+}
+.list{
+    @include flex;
+    flex-direction: column;
+    
+    p{
+        margin: 0;
+        color: white;
+        font-family: $font_roboto;
+    }
+}
+.work {
+    height: 1004px;
+    background: #EEEFF1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: $font_roboto;
+
+    p{
+    width: 540px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    }
+}
+.image {
+    width: 100%;
+    max-width: 1110px;
+    aspect-ratio: 1110 / 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;;
+    background-image: url('../images/2.png') ;
+    background-size: cover;
+    background-position: center; 
+} 
+.image_vector{
+    width: 10%;
+    max-width: 100px;
+}

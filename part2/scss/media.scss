@@ -1,0 +1,155 @@
+
+$padding: 0 20px;
+@include adaptive (768px, 1250px) {
+    .header{
+        padding-left: 200px;
+        height: auto;
+    }
+    .project{
+        padding: 0 200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@include adaptive (481px, 767px) {
+    .header{
+        padding: $padding;
+        height: auto;
+    }
+    .header_top{
+        padding-top: 20px;
+        gap: 20px;
+
+        a{
+            font-size: 14px;
+        }
+    }
+    .header_main{
+
+        padding-top: 80px; 
+        width: 100%;
+        padding-bottom: 80px;
+
+        h1{
+            font-size: 36px;
+        }
+
+        a{
+            font-size: 14px;
+            height: 55px;
+            width: 200px;
+        }
+    }
+    .main {
+        padding: $padding;
+        width: auto;
+        height: auto;
+
+        p{
+            width: auto;
+            line-height: 22px;
+            font-size: 14px;
+        }
+    }
+    .project{
+        height: auto;
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    .work {
+        height: auto;
+        padding: 20px 20px;
+        p {
+            width: auto;
+            font-size: 14px;
+        }
+    }
+    .footer{
+        padding: padding;
+        row-gap: 20px;
+        h1{
+            font-size: 19px;
+        }
+
+        p{
+            font-size: 11px;
+        }
+    }
+}
+@include adaptive (340px, 480px){
+    .header{
+        padding: $padding;
+        height: auto;
+    }
+    .header_top{
+        padding-top: 20px;
+        gap: 15px;
+
+        a{
+            font-size: 10px;
+        }
+    }
+    .header_main {
+        font-size: 25px;
+        width: 100%;
+        padding: 40px 0 40px 0;
+
+        h1{
+            font-size: 25px;
+        }
+
+        a{
+            font-size: 10px;
+            height: 40px;
+            width: 120px;
+        }
+    }
+    .main {
+        padding: 20px 20px;
+        width: auto;
+        height: auto;
+
+        p{
+            width: auto;
+            line-height: 20px;
+            font-size: 14px;
+        }
+    }
+    .project{
+        height: auto;
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    .work {
+        height: auto;
+        padding: 20px 20px;
+
+        p {
+            width: auto;
+            font-size: 14px;
+        }
+    }
+    .footer{
+        padding: $padding;
+        row-gap: 20px;
+
+        h1{
+            font-size: 17px;
+        }
+        
+        p{
+            font-size: 9px;
+        }
+    }
+}

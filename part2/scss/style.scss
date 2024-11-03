@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Roboto.ttf');
+}
+$color: #34547A;
+$font_roboto: 'Roboto';
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin adaptive($min-width, $max-width) {
+    @media (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+      @content;
+  }
+}
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
+@import './media.scss';

@@ -1,0 +1,22 @@
+.footer{
+    height: 151px;
+    background: $color;
+    font-family: $font_roboto;
+    padding-left: 406px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+
+    h1{
+        margin: 0;
+        font-size: 21px;
+    }  
+
+    p{
+        margin: 0;
+        font-size: 13px;
+    }
+}
